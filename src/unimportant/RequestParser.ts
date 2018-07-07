@@ -1,9 +1,7 @@
 export class Request {
-    private req: any;
     private res: any;
 
-    constructor(req: any, res: any) {
-        this.req = req;
+    constructor(res: any) {
         this.res = res;
     }
 

@@ -1,9 +1,7 @@
 import express from 'express';
 import * as bodyParser from 'body-parser';
 import { Request } from './RequestParser';
-import { help } from '../help';
 import { mapRoutes } from '../routeMapping';
-const localTunnel = require('localtunnel');
 
 async function init() {
     const app = express();
@@ -15,7 +13,7 @@ async function init() {
     app.post('*', (req, res) => {
         const intentName = req.body.queryResult.intent.displayName;
         if (typeof routes[intentName] !== 'undefined') {
-            routes[intentName](new Request(req, res));
+            routes[intentName](new Request(res));
         }
     });
 }
