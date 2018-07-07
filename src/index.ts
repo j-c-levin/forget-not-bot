@@ -10,7 +10,7 @@ async function init() {
     const app = express();
     app.listen(80, () => console.log('Example app listening on port 80!'));
     // const WebhookClient = df.WebhookClient;
-    app.use('*', () => {
+    app.use(() => {
         console.log('called');
     });
 }
