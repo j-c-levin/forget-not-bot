@@ -2,7 +2,7 @@ import express from 'express';
 import * as bodyParser from 'body-parser';
 import { Request } from './RequestParser';
 import { help } from '../help';
-import { mapRoutes } from '../mapping';
+import { mapRoutes } from '../routeMapping';
 const localTunnel = require('localtunnel');
 
 async function init() {
