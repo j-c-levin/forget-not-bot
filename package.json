@@ -2,10 +2,9 @@
   "name": "forget-not-bot",
   "version": "1.0.0",
   "description": "A work experience week project",
-  "main": "src/index.js",
+  "main": "src/unimportantindex.js",
   "scripts": {
-    "start": "npm-run-all --parallel tunnel server",
-    "server": "nodemon --watch src --exec ts-node src/index.ts",
+    "start": "nodemon --watch src --exec ts-node src/unimportant/index.ts",
     "tunnel": "lt --port 80 --subdomain forget-not-bot"
   },
   "repository": {

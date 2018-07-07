@@ -1,7 +1,7 @@
 import express from 'express';
 import * as bodyParser from 'body-parser';
-import { help } from './help';
 import { Request } from './RequestParser';
+import { help } from '../help';
 const localTunnel = require('localtunnel');
 
 async function init() {
