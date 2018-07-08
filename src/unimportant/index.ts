@@ -13,7 +13,7 @@ async function init() {
     app.post('*', (req, res) => {
         const intentName = req.body.queryResult.intent.displayName;
         if (typeof routes[intentName] !== 'undefined') {
-            routes[intentName](new Request(res));
+            routes[intentName](new Request(req, res));
         }
     });
 }
