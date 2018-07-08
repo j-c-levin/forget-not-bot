@@ -5,7 +5,7 @@ import { mapRoutes } from '../routeMapping';
 
 async function init() {
     const app = express();
-    app.listen(80, () => console.log('Bot running on port 80!'));
+    app.listen(3000, () => console.log('Bot running on port 3000!'));
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
     const routes: { [name: string]: (req: Request) => void } = {};
