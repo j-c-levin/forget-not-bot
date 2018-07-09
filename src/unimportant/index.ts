@@ -12,8 +12,11 @@ async function init() {
     mapRoutes(routes);
     app.post('*', (req, res) => {
         const intentName = req.body.queryResult.intent.displayName;
+        console.log('incoming intent:', intentName);
         if (typeof routes[intentName] !== 'undefined') {
             routes[intentName](new Request(req, res));
+        } else {
+            console.log(`but it didn't match any route names`);
         }
     });
 }
