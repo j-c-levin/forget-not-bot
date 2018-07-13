@@ -7,8 +7,16 @@ A work experience week project
 
 Download and install Nodejs (the recommended version is fine) `https://nodejs.org/en/`
 
+## (optionally) Visual Studio Code
+
+https://code.visualstudio.com/
+
 ## Open a command prompt
 
+### From vs code
+If you downloaded visual studio code, you can press ctrl + ' (control plus apostrophe) to bring up a command prompt in the right directory.  And from a button on the temrinal window you can quickly create more terminals in the same location.  It's good like that.
+
+### From command prompt
 Open up a command prompt in the root directory
 
 * Copy the directory from windows explorer 
@@ -22,6 +30,10 @@ Open up a command prompt in the root directory
 ![Type into the command prompt cd [address]](https://i.imgur.com/4ELQWS6.png)
 
 ![Press enter](https://i.imgur.com/VjwQl9j.png)
+
+## Install
+
+From a command prompt run `npm install`
 
 ## Create a tunnel
 
