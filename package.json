@@ -5,7 +5,7 @@
   "main": "src/unimportantindex.js",
   "scripts": {
     "start": "nodemon --watch src --exec ts-node src/unimportant/index.ts",
-    "tunnel": "ngrok http 3000 -subdomain=forget-not-bot"
+    "tunnel": "ngrok http 3000"
   },
   "repository": {
     "type": "git",
